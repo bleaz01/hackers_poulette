@@ -1,0 +1,26 @@
+
+body{
+	background-color:white;
+}
+
+#nav-bar{
+	background-color:#15C5BD;
+	
+}
+
+#forms{
+
+	background-color:#15C5BD;
+
+	
+}
+.d-flex{
+
+	background-image:url("../../assets/image/hackers-poulette-logo.png");
+	background-repeat: no-repeat;
+	background-position: center;	
+}
+#robot{
+	display:none;
+	}
+

@@ -5,16 +5,14 @@ body{
 
 #nav-bar{
 	background-color:#46E866;
+	
 }
 
 #forms{
 
 	background-color:#46E866;
+	background-image:url("../../assets/image/hackers-poulette-logo.png");
+	
 }
 
-#formsOne, #formsTwo{
-	background-color:white;
-	border-style:solid;
-	border-color:black;
-}
 
