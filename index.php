@@ -11,7 +11,7 @@
 $name =  $_POST['name'];
 $name1 = $_POST['family-name'];
 $email = $_POST['email'];
-$genre = $_POST['genre'];
+$gender = $_POST['gender'];
 $pays = $_POST['pays'];
 $subject = $_POST['subject'];
 $text = $_POST['text'];
@@ -83,7 +83,7 @@ if($valid == 5){
 	header("location: forms.php");
 	}
 		$_SESSION["key"] = $_POST;
-var_dump($_SESSION["key"]);
+
 
 ?>
 
@@ -139,15 +139,15 @@ var_dump($_SESSION["key"]);
 				<div id="formsTwo" class="p-2 mt-5 ml-auto col-sm-12 col-md-6 col-lg-4">
 					<div class="form-check form-check-inline mb-1">
 					<span><?= $gender_err ?></span>
-						<input name="genre" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Mr">
+						<input name="gender" class="form-check-input" type="radio"  id="inlineRadio1" value="Mr">
 						<label class="form-check-label" for="homme">Mr</label>
 					<div id="robot" class="form-group">
-						<label class="d-none" for="exampleFormControlInput1 ">Ascii style</label>
-						<input type="text" name='robot' class="form-control d-none" id="exampleFormControlInput1" placeholder="I am robot">
+						<label class="" for="exampleFormControlInput1 ">Ascii style</label>
+						<input type="text" name='robot' class="form-control" id="robot" placeholder="I am robot">
 					</div>
 					</div>
 					<div class="form-check form-check-inline">
-						<input name="genre"class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="M/Mm">
+						<input name="gender"class="form-check-input" type="radio"  id="inlineRadio2" value="M/Mm">
 						<label class="form-check-label" for="femme">M/Mm</label>
 					</div>
 					<label for="exampleFormControlInput1" class="pb-5">pays</label>
