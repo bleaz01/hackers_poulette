@@ -8,7 +8,7 @@
 		$subject = "Formulaire";
 		$recip = $_SESSION["key"]['email'];
 		$mailheader ="From: ridjea@gmail.com";
-		 mail($recip ,$subject ,$message,$mailheader);
+		 mail($recip, $subject, $message, $mailheader);
 	
 		echo "<HTML><HEAD>";
 		echo "<TITLE>Formulaire envoyer!</TITLE></HEAD><BODY>";

@@ -109,7 +109,7 @@ if($valid == 5){
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-				<a class="navbar-brand" href="#">Hidden brand</a>
+				<img src="assets/image/hackers-poulette-logo.png" class="picture"/>
 				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 					<li class="nav-item active">
 						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -130,7 +130,7 @@ if($valid == 5){
 			<section class="d-flex">
 				<div id="formsOne" class="form-group p-2 mt-5 col-sm-12 col-md-6 col-lg-4">
 					<label for="name">Name</label>
-					<input type="text"  name="name"class="form-control pb-1" id="exampleFormControlInput1" placeholder="<?= $erreur?>">
+					<input type="text"  name="name"class="form-control pb-1" id="exampleFormControlInput1"  placeholder="<?= $erreur?>">
 					<label for="Family name">Family name</label>
 					<input type="text" name="family-name" class="form-control" id="exampleFormControlInput1" placeholder="<?= $name1_err?>">
 					<label for="Email">Email address</label>
@@ -138,7 +138,7 @@ if($valid == 5){
 				</div>	
 				<div id="formsTwo" class="p-2 mt-5 ml-auto col-sm-12 col-md-6 col-lg-4">
 					<div class="form-check form-check-inline mb-1">
-					<span><?= $gender_err ?></span>
+						<?= $gender_err ?>
 						<input name="gender" class="form-check-input" type="radio"  id="inlineRadio1" value="Mr">
 						<label class="form-check-label" for="homme">Mr</label>
 					<div id="robot" class="form-group">

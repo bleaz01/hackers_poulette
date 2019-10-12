@@ -2,7 +2,18 @@
 body{
 	background-color:white;
 }
-
+img{
+	width:10%;
+	height:10%;
+}
+@font-face {
+	font-family: "my";
+	src: url('assets/css/fonts/Bellota-Light.otf');
+}
+label{
+	font-family: my;
+	color:#303030;
+	}
 #nav-bar{
 	background-color:#15C5BD;
 	
