@@ -9,6 +9,11 @@ img{
 	width:15%;
 	height:15%;
 }
+label, li{
+		font-family: my, sans-serif;
+		color:#303030;
+}
+
 @font-face {
 	font-family: "my";
 	src: url('fonts/Bellota-LightItalic.otf');
@@ -17,6 +22,7 @@ img{
 #forms{
 
 	background-color:#15C5BD;
+	border-radius:10%;
 
 	
 }

@@ -18,7 +18,7 @@ include "assets/includes/valided.php";
     <title>Contact us</title>
   </head>
   <body class="container-fluid">
-    <section id="nav-bar" class="mt-5 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <section id="nav-bar" class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
     	<nav class=" navbar navbar-expand-lg navbar-light .bg-transparent">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -39,7 +39,7 @@ include "assets/includes/valided.php";
 			</div>
 		</nav>
     </section>
-	<section id="forms" class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+	<section id="forms" class="mb-3 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 		<form action="index.php" method="post" accept-charset="utf-8">
 		<img src="assets/image/hackers-poulette-logo(1).png"alt="" />
 			<section class="d-flex">
