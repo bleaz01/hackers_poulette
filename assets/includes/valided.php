@@ -1,7 +1,7 @@
 <?php
 session_start();
 //Span
-	if(!empty($_POST['robot'])){
+	if(!empty($_POST['surname'])){
 		header("location: https://bleaz01.github.io/404-page/");
 		exit();
 		}
@@ -24,7 +24,7 @@ $countries=['Belgique','France', 'Suisse', 'Allemagne', 'Pays-Bas', 'England', '
 $subj=['Annulations de commande','Service client','Jop'];
 
 $valid = 0;
-//Ligne de Code
+//Ligne de Code:
 
 
 			//Name
@@ -32,7 +32,7 @@ $valid = 0;
 			$erreur = "champ obligatoir";
 			}			
 			else if(!preg_match('`^[a-zA-Z \'\-\.]+$`', htmlspecialchars($name))){
-			$erreur = 'Votre nom est pas corrects.';
+			$erreur = "name erro, caractére only pleas.";
 			}
 			else{
 				$valid++;
@@ -44,7 +44,7 @@ $valid = 0;
 				$name1_err = "champ obligatoir";
 			}
 			else if(!preg_match('`^[a-zA-Z \'\-\.]+$`', htmlspecialchars($name1))){
-				$name1_err = 'Votre nom est pas corrects.';
+				$name1_err = 'family-name erro, caractére only pleas.';
 			}
 			else{
 				$valid++;
@@ -71,14 +71,14 @@ $valid = 0;
 			if(isset($text) && empty($text)){
 				$msg_err="champ obligatoir";
 				}
-			else if(preg_match_all('/fid=\'([^\']+)\'/',htmlspecialchars($text))){
+			else if(!preg_match_all('/fid=\'([^\']+)\'/',htmlspecialchars($text))){
 
-				$msg_err="erreur dans le text";
+				$msg_err="Erro text hacker-man";
 			}
 			else{
 				$valid++;
 				}
-
+//validation tu fomulaire:
 if($valid == 5){
 	header("location: forms.php");
 	}

@@ -9,6 +9,8 @@ include "assets/includes/valided.php";
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="exercise" content="Author : Riguelle jeason " />
+	<link rel"shortcut icon" href="assets/image/hackers-poulette-logo.png"/>
 	<link rel="stylesheet" href="assets/css/style.css"/>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -22,11 +24,11 @@ include "assets/includes/valided.php";
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-				<ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+			<img src="assets/image/hackers-poulette-logo.png" class="picture" alt="logo hackers poulette"/>
+				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 					<li class="nav-item active">
 						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 					</li>
-					<img src="assets/image/hackers-poulette-logo.png" class="picture"/>
 					<li class="nav-item">
 						<a class="nav-link" href="#">Link</a>
 					</li>
@@ -55,8 +57,8 @@ include "assets/includes/valided.php";
 						<input name="gender" class="form-check-input" type="radio"  id="inlineRadio1" value="Mr">
 						<label class="form-check-label" for="homme">Mr</label>
 					<div id="robot" class="form-group">
-						<label class="" for="exampleFormControlInput1 ">Ascii style</label>
-						<input type="text" name='robot' class="form-control" id="robot" placeholder="I am robot">
+						<label class="" for="exampleFormControlInput1 ">Surname</label>
+						<input type="text" name='Surname' class="form-control" id="robot" placeholder="I am robot">
 					</div>
 					</div>
 					<div class="form-check form-check-inline">
