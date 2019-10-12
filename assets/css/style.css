@@ -3,8 +3,8 @@ body{
 	background-color:white;
 }
 img{
-	width:10%;
-	height:10%;
+	width:20%;
+	height:20%;
 }
 @font-face {
 	font-family: "my";
@@ -32,6 +32,12 @@ label{
 	background-position: center;	
 }
 #robot{
-	display:none;
+	 opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 0;
+        width: 0;
+        z-index: -1;
 	}
 
