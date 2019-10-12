@@ -8,10 +8,10 @@ img{
 }
 @font-face {
 	font-family: "my";
-	src: url('assets/css/fonts/Bellota-Light.otf');
+	src: url('assets/css/fonts');
 }
 label{
-	font-family: my;
+	font-family: my, Bellota-Light.otf, sans-serif;
 	color:#303030;
 	}
 #nav-bar{
