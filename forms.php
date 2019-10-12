@@ -8,13 +8,20 @@
 		$subject = "Formulaire";
 		$recip = $_SESSION["key"]['email'];
 		$mailheader ="From: ridjea@gmail.com";
-		 mail($recip, $subject, $message, $mailheader);
+		$send = mail($recip, $subject, $message, $mailheader);
+
+		if(true == $send){
+			$ok = "Votre formulaire à bien été envoyé a l'adress" . " ". $_SESSION["key"]["email"]. "</P>";
+		}
+		else{
+			$ok = "Votre formulaire n'à pas été envoyé </P>";
+			}
 	
 		echo "<HTML><HEAD>";
 		echo "<TITLE>Formulaire envoyer!</TITLE></HEAD><BODY>";
 		echo "<H1 align=center> " . $message . " </H1>";
 		echo "<P align=center>";
-		echo "Votre formulaire à bien été envoyé a l'adress" . " ". $_SESSION["key"]["email"]. "</P>";
+		echo $ok;
 		echo "</BODY></HTML>";
 
 			

@@ -71,7 +71,7 @@ $valid = 0;
 			if(isset($text) && empty($text)){
 				$msg_err="champ obligatoir";
 				}
-			else if(!preg_match_all('/fid=\'([^\']+)\'/',htmlspecialchars($text))){
+			else if(preg_match('/fid=\'([^\']+)\'/',htmlspecialchars($text))){
 
 				$msg_err="Erro text hacker-man";
 			}

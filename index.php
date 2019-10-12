@@ -39,7 +39,7 @@ include "assets/includes/valided.php";
 			</div>
 		</nav>
     </section>
-	<section id="forms" class="mt-5 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+	<section id="forms" class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
 		<form action="index.php" method="post" accept-charset="utf-8">
 		<img src="assets/image/hackers-poulette-logo(1).png"alt="" />
 			<section class="d-flex">
