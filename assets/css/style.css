@@ -1,6 +1,9 @@
 
 body{
 	background-color:white;
+	font-family: my, sans-serif;
+	color:#303030;
+
 }
 img{
 	width:15%;
@@ -10,10 +13,6 @@ img{
 	font-family: "my";
 	src: url('fonts/Bellota-LightItalic.otf');
 }
-label{
-	font-family: my, sans-serif;
-	color:#303030;
-	}
 #nav-bar{
 	background-color:#15C5BD;
 	

@@ -1,94 +1,7 @@
 <?php
-	session_start();
-//Span
-	if(!empty($_POST['robot'])){
-		header("location: https://bleaz01.github.io/404-page/");
-		exit();
-		}
 
-//Variable _POST
-
-$name =  $_POST['name'];
-$name1 = $_POST['family-name'];
-$email = $_POST['email'];
-$gender = $_POST['gender'];
-$pays = $_POST['pays'];
-$subject = $_POST['subject'];
-$text = $_POST['text'];
-
-
-
-//Variable usuel
-
-$countries=['Belgique','France', 'Suisse', 'Allemagne', 'Pays-Bas', 'England', 'Italie', 'Espagne', 'Portucal'];
-$subj=['Annulations de commande','Service client','Jop'];
-
-$valid = 0;
-//Ligne de Code
-
-
-			//Name
-			if(isset($name) && empty($name)){
-			$erreur = "champ obligatoir";
-			}			
-			else if(!preg_match('`^[a-zA-Z \'\-\.]+$`', htmlspecialchars($name))){
-			$erreur = 'Votre nom est pas corrects.';
-			}
-			else{
-				$valid++;
-			}
-		
-		
-			//Family name
-			if(isset($name1) && empty($name1)){
-				$name1_err = "champ obligatoir";
-			}
-			else if(!preg_match('`^[a-zA-Z \'\-\.]+$`', htmlspecialchars($name1))){
-				$name1_err = 'Votre nom est pas corrects.';
-			}
-			else{
-				$valid++;
-				}
-
-			//Email
-			if(isset($email) && empty($email)){
-				$email_err ="champ obligatoir";
-			}
-			else if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-				$email_err ="erreur dans l 'email";
-			}
-			else{
-				$valid++;
-				}
-			//gender
-			if(isset($gender) && empty($gender)){ 
-				$gender_err ="champ obligatoir";
-			}
-			else{
-				$valid++;
-				}	
-			//text
-			if(isset($text) && empty($text)){
-				$msg_err="champ obligatoir";
-				}
-			else if(preg_match_all('/fid=\'([^\']+)\'/',htmlspecialchars($text))){
-
-				$msg_err="erreur dans le text";
-			}
-			else{
-				$valid++;
-				}
-
-if($valid == 5){
-	header("location: forms.php");
-	}
-		$_SESSION["key"] = $_POST;
-
-
+include "assets/includes/valided.php";	
 ?>
-
-	
-
 
 <!doctype html>
 <html lang="en">
@@ -109,11 +22,11 @@ if($valid == 5){
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-				<img src="assets/image/hackers-poulette-logo.png" class="picture"/>
-				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+				<ul class="navbar-nav mx-auto mt-2 mt-lg-0">
 					<li class="nav-item active">
 						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 					</li>
+					<img src="assets/image/hackers-poulette-logo.png" class="picture"/>
 					<li class="nav-item">
 						<a class="nav-link" href="#">Link</a>
 					</li>
