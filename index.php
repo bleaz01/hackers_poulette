@@ -18,7 +18,7 @@ include "assets/includes/valided.php";
     <title>Contact us</title>
   </head>
   <body class="container-fluid">
-    <section id="nav-bar" class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <header id="nav-bar" class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
     	<nav class=" navbar navbar-expand-lg navbar-light .bg-transparent">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -38,32 +38,32 @@ include "assets/includes/valided.php";
 				</ul>
 			</div>
 		</nav>
-    </section>
-	<section id="forms" class="container">
+    </header>
+	<main id="forms" class="container">
 		<form action="index.php" method="post" id="form" class= "container-fluid" accept-charset="utf-8">
 		<img src="assets/image/hackers-poulette-logo(1).png"alt="" />
 			<section class="row justify-content-between">
 				<div id="formsOne" class="form-group col-sm-12 col-md-6 col-lg-4">
 					<label for="name">Name</label>
-					<input type="text" name="name"class="form-control pb-1" id="exampleFormControlInput1"  placeholder="<?= $erreur?>">
-					<label for="Family name">Family name</label>
-					<input type="text" name="family-name" class="form-control" id="exampleFormControlInput1" placeholder="<?= $name1_err?>">
-					<label for="Email">Email address</label>
-					<input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="<?= $email_err ?>">	
-					<label id="surname" for="exampleFormControlInput1 ">Surname</label>
+					<input type="text" name="name"class="form-control pb-1" id="name"  placeholder="<?= $erreur?>">
+					<label for="family-name">Family name</label>
+					<input type="text" name="family-name" class="form-control" id="family-name" placeholder="<?= $name1_err?>">
+					<label for="email">Email address</label>
+					<input type="email" name="email" class="form-control" id="email" placeholder="<?= $email_err ?>">	
+					<label id="surname" for="surname ">Surname</label>
 					<input type="text" name='surname' class="form-control" id="surname" placeholder="I am robot">
 				</div>	
 				<div id="formsTwo" class="col-sm-12 col-md-6 col-lg-4">
 					<div class="col-12 form-check form-check-inline">
-						<label class="form-check-label" for="homme">Mr  </label>
-						<input name="gender" class="form-check-input" type="radio"  id="inlineRadio1" value="Mr">
+						<label class="form-check-label" for="Mr">Mr  </label>
+						<input name="gender" class="form-check-input" type="radio"  id="Mr" value="Mr">
 					</div>
 					<div class="col-12form-check form-check-inline">
-						<label class="form-check-label" for="femme">M/Mm  </label>
-						<input name="gender"class="form-check-input" type="radio"  id="inlineRadio2" value="M/Mm"><?= $gender_err ?>
+						<label class="form-check-label" for="M/Mm">M/Mm  </label>
+						<input name="gender"class="form-check-input" type="radio"  id="M/Mm" value="M/Mm"><?= $gender_err ?>
 					</div>
-					<label for="exampleFormControlInput1" class="mt-4 col-12">Select your countrie </label>
-					<select type="text"  name="pays"class="form-control" id="exampleFormControlInput1">
+					<label for="pays" class="mt-4 col-12">Select your countrie </label>
+					<select type="text"  name="pays"class="form-control" id="pays">
 						<?php
 
 							ForEach($countries as $valeur){
@@ -83,14 +83,14 @@ include "assets/includes/valided.php";
 			</section>
 			<div id="textarea" class=" mt-5 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 				<div class="form-group">
-					<label for="Message">Message</label>
-					<textarea name="text" class="p-2 form-control" id="exampleFormControlTextarea1" rows="3"><?= $msg_err ?></textarea>
+					<label for="text">Message</label>
+					<textarea name="text" class="p-2 form-control" id="text" rows="3"><?= $msg_err ?></textarea>
 
 				</div>
-				<button type="submit" class="p-2 mb-2 btn btn-outline-light">send</button>
+				<button type="submit" class="p-2 mb-2 btn btn-outline-secondary">send</button>
 			</div>
 		</form>
-	</section>
+	</main>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
