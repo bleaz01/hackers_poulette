@@ -39,34 +39,31 @@ include "assets/includes/valided.php";
 			</div>
 		</nav>
     </section>
-	<section id="forms" class="mb-3 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-		<form action="index.php" method="post" accept-charset="utf-8">
+	<section id="forms" class="container">
+		<form action="index.php" method="post" id="form" class= "container-fluid" accept-charset="utf-8">
 		<img src="assets/image/hackers-poulette-logo(1).png"alt="" />
-			<section class="d-flex">
-				<div id="formsOne" class="form-group p-2 mt-5 col-sm-12 col-md-6 col-lg-4">
+			<section class="row justify-content-between">
+				<div id="formsOne" class="form-group col-sm-12 col-md-6 col-lg-4">
 					<label for="name">Name</label>
-					<input type="text"  name="name"class="form-control pb-1" id="exampleFormControlInput1"  placeholder="<?= $erreur?>">
+					<input type="text" name="name"class="form-control pb-1" id="exampleFormControlInput1"  placeholder="<?= $erreur?>">
 					<label for="Family name">Family name</label>
 					<input type="text" name="family-name" class="form-control" id="exampleFormControlInput1" placeholder="<?= $name1_err?>">
 					<label for="Email">Email address</label>
-					<input type="email"  name="email" class="form-control" id="exampleFormControlInput1" placeholder="<?= $email_err  . $email ?>">	
+					<input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="<?= $email_err ?>">	
+					<label id="surname" for="exampleFormControlInput1 ">Surname</label>
+					<input type="text" name='surname' class="form-control" id="surname" placeholder="I am robot">
 				</div>	
-				<div id="formsTwo" class="p-2 mt-5 ml-auto col-sm-12 col-md-6 col-lg-4">
-					<div class="form-check form-check-inline mb-1">
-						<?= $gender_err ?>
+				<div id="formsTwo" class="col-sm-12 col-md-6 col-lg-4">
+					<div class="col-12 form-check form-check-inline">
+						<label class="form-check-label" for="homme">Mr  </label>
 						<input name="gender" class="form-check-input" type="radio"  id="inlineRadio1" value="Mr">
-						<label class="form-check-label" for="homme">Mr</label>
-					<div id="robot" class="form-group">
-						<label class="" for="exampleFormControlInput1 ">Surname</label>
-						<input type="text" name='Surname' class="form-control" id="robot" placeholder="I am robot">
 					</div>
+					<div class="col-12form-check form-check-inline">
+						<label class="form-check-label" for="femme">M/Mm  </label>
+						<input name="gender"class="form-check-input" type="radio"  id="inlineRadio2" value="M/Mm"><?= $gender_err ?>
 					</div>
-					<div class="form-check form-check-inline">
-						<input name="gender"class="form-check-input" type="radio"  id="inlineRadio2" value="M/Mm">
-						<label class="form-check-label" for="femme">M/Mm</label>
-					</div>
-					<label for="exampleFormControlInput1" class="pb-5">pays</label>
-					<select type="text"  name="pays"class="form-control" id="exampleFormControlInput1" placeholder="Belgique">
+					<label for="exampleFormControlInput1" class="mt-4 col-12">Select your countrie </label>
+					<select type="text"  name="pays"class="form-control" id="exampleFormControlInput1">
 						<?php
 
 							ForEach($countries as $valeur){
@@ -75,7 +72,7 @@ include "assets/includes/valided.php";
 						?>
 					</select>
 					<label for="subject">subject</label>
-					<select type="text" name="subject" class="form-control" id="exampleFormControlInput1" placeholder=>
+					<select type="text" name="subject" class="form-control col-12" id="exampleFormControlInput1">
 						<?php
 							ForEach($subj as $valeur){
 							echo"<option>$valeur</option>";

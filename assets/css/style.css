@@ -22,17 +22,11 @@ label, li{
 #forms{
 
 	background-color:#15C5BD;
-	border-radius:10%;
-
+	border-radius:1%;
+	
 	
 }
-.d-flex{
-
-	background-image:url("../../assets/image/hackers-poulette-logo.png");
-	background-repeat: no-repeat;
-	background-position: center;	
-}
-#robot{
+#surname{
 	 opacity: 0;
         position: absolute;
         top: 0;
@@ -41,4 +35,13 @@ label, li{
         width: 0;
         z-index: -1;
 	}
+@media screen (min-width: 600px) {
+  #form{
+	background-image:url("../../assets/image/hackers-poulette-logo.png");
+	background-repeat: no-repeat;
+	background-position: center;	
 
+
+}
+
+}
