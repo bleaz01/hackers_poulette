@@ -1,2 +1,16 @@
 # hackers_poulette
 [layout](assets/image/layout_hakers-poulette.png)
+
+## Forms
+
+creation d'un formulaire en en php + recuperation la valeur de l'input de l'utilisateur 
+
+## Santize 
+
+Securité tous les entrées de l'utilasteur: __hacking__
+
+## mailchimp
+
+Quand le formulaire est completé et securisé alors il est envoié.
+qui entraine un envoie automatique à l'utilisateur pour lui confirmé que son fomulaire a bien etais envoié
+
