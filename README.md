@@ -14,3 +14,6 @@ Securité tous les entrées de l'utilasteur: __hacking__
 Quand le formulaire est completé et securisé alors il est envoié.
 qui entraine un envoie automatique à l'utilisateur pour lui confirmé que son fomulaire a bien etais envoié
 
+__functionalité__
+
+* envoie de mail fonction mais j'utilise un mailchimps qui est gratuit, donc le quota est dépassé
