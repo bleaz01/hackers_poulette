@@ -1,5 +1,5 @@
 # hackers_poulette
-![layout](assets/image/)
+![layout](assets/image/layout_hackers_poulette.png)
 
 ## Forms
 
