@@ -1,19 +1,47 @@
-# hackers_poulette
+
+### Table des matières
+1. Description
+2. Mock-up
+3. Technologies
+4. Front-end
+5. Back-end
+6. Ressources
+7. Contact
+
+### Description
+
+Ce projet consiste à concevoir un forumulaire de contact interactif en PHP 7 pour une marque fictive "Hackers-Poulette" dans le cadre de la formation Fullstack chez Becode.
+
+
+
+Mock-up
 ![layout](assets/image/layout_hackers_poulette.png)
 
-## Forms
+Ce projet a été réalisé principalement avec les techologies frontend et backend.
 
-creation d'un formulaire en en php + recuperation la valeur de l'input de l'utilisateur 
 
-## Santize 
+__Front-end__
 
-Securité tous les entrées de l'utilasteur: __hacking__
+- HTML5
+- Bootstrap
+- Fonts 
+- Back-end
+- PHP 7.3.10 :
 
-## mailchimp
+__Back-end__
 
-Quand le formulaire est completé et securisé alors il est envoié.
-qui entraine un envoie automatique à l'utilisateur pour lui confirmé que son fomulaire a bien etais envoié
+- Php
+- MailChimps
 
-__functionalité__
 
-* envoie de mail fonction mais j'utilise un mailchimps qui est gratuit, donc le quota est dépassé
+
+### Ressources
+- [php](https://www.php.net/)
+- [mozilla](https://developer.mozilla.org/fr/)
+- [w3schools](https://www.w3schools.com/)
+
+### Contact
+Projet réalisé par Jeason Riguelle (ridjea@gmail.com) - contactez-moi!
+
+
+* Pour l'envoie de mail j'utilise un mailchimps qui est gratuit, mais le quota d'envoie est dépassé
